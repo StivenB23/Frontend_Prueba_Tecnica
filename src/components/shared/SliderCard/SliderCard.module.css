@@ -1,0 +1,22 @@
+.container__carousel {
+    width: 1170px;
+}
+.container__carousel h2 {
+    margin-bottom: 15px;
+}
+
+.carousel {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    padding: 10px 0;
+    gap: 20px;
+    user-select: none;
+    scroll-behavior: smooth; 
+    cursor: grab;
+}
+
+.carousel:active {
+    cursor: grabbing;
+}

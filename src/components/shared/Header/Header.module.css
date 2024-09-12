@@ -1,0 +1,50 @@
+.header {
+    width: 100%;
+    height: 69px;
+    display: flex;
+    background-color: var(--color-dark);
+    padding: 0 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header__nav {
+    display: flex;
+    width: auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.header nav {
+    display: inherit;
+    gap: 50px;
+}
+
+.header a {
+    width: auto;
+    color: var(--color-white);
+}
+
+.logo {
+    position: relative;
+    width: 250px;
+    height: 60px;
+}
+
+.iconLogin {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.iconLogin:hover {
+    cursor: pointer;
+}
+
+.container__acount {
+    display: flex;
+    gap: 10px;
+    width: 100px;
+   align-items: center;
+}

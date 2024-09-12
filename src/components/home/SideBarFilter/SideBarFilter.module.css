@@ -1,0 +1,18 @@
+.sideBarFilter{
+    background-color: #262626;
+    padding: 2rem 1rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sideBarFilter label{
+    font-family: var(--font-inter);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.search input, .filterGeners select{
+    margin-top: 10px;
+}

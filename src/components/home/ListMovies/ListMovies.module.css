@@ -1,0 +1,19 @@
+.listMovies {
+    padding: 2rem 1.2rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #343434;
+}
+
+.listMovies h2 {
+    font-size: 1.6rem;
+}
+.container__movies__filtered{
+    width: 100%;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}

@@ -1,0 +1,134 @@
+.modalLogin {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 80%;
+    height: 80vh;
+    border: 1px solid #929292;
+    z-index: 50;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    display: grid;
+    grid-template-columns: auto 450px;
+    gap: 10px;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.modalLoginClose {
+    transform: translateX(-180%);
+    transition: transform 1s ease-in;
+
+}
+
+.modalLoginOpen {
+    transform: translateX(-50%);
+    transition: transform 1s ease-in;
+}
+
+.message {
+    background-color: #1C1C1C;
+    border-radius: 0 10px 10px 0px;
+    padding-top: 30px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.message h2 {
+    font-size: 24px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.forms {
+    padding: 1rem 1.5rem;
+}
+
+.image__singup {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background: url("/Login_Person.png") no-repeat;
+    background-size: contain;
+}
+
+.image__login {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    background: url("/SignUp_Person.png") no-repeat;
+    background-size: contain;
+}
+
+.iconBack {
+    background: url("/Icon_Back.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+}
+
+.linkBack {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--color-white);
+    font-weight: 600;
+    gap: 8px;
+}
+
+.buttons {
+    display: flex;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.buttons button {
+    padding: 8px 21px;
+    font-weight: bold;
+    background-color: #343434;
+    color: var(--color-white);
+    text-shadow: 0 0 5px #63636379;
+    transition: .2s ease-in-out;
+
+}
+
+.buttons button:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.buttons button:nth-child(2) {
+    border-radius: 0 8px 8px 0;
+}
+
+.buttons button:first-child:hover {
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2):hover {
+    cursor: pointer;
+}
+
+button.buttonActive {
+    background-color: var(--color-primary);
+}

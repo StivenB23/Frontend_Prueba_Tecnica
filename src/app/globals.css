@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap');
+
+html,
+* {
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark: rgb(0 0 0);
+  --color-white: rgb(255, 255, 255);
+  --color-primary: rgb(240, 185, 11);
+  --color-primary-hover: rgb(230, 176, 0);
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-ibmPlex: "IBM Plex Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-ibmPlex);
+}
+
+button {
+  border: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-ibmPlex);
+}
+
+p {
+  font-family: var(--font-inter);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+input {
+  height: 46px;
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px 5px 0 0;
+  background-color: #1C1C1C;
+  border-bottom: 2px solid #8b8b8b;
+  padding: 10px 12px;
+}
+
+select {
+  color: var(--color-white);
+  background-color: #1C1C1C;
+  border: none;
+  padding: 10px 12px;
+
+}
+
+option {
+  border: none;
+  background-color: #1C1C1C;
+
+}
+
+option:hover {
+  background-color: #7cacda;
+}
+
+.movies__container {
+  display: grid;
+  grid-template-columns: 20% auto;
+  height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Estilo del contenedor del scroll */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Ancho del scroll vertical */
+  height: 12px;
+  /* Altura del scroll horizontal */
+}
+
+/* Estilo de la barra de desplazamiento (scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #929292;
+  /* Color de la barra de desplazamiento */
+  border-radius: 6px;
+  /* Bordes redondeados de la barra */
+  border: 3px solid transparent;
+  /* Espacio alrededor de la barra */
+  background-clip: content-box;
+  /* Ajusta el espacio del borde */
+}
+
+/* Hover sobre la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4b4b4b;
+  /* Color al pasar el mouse por la barra */
+}
+
+/* Estilo de la pista de la barra de desplazamiento (scrollbar track) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* Color de fondo de la pista */
+  /* border-radius: 6px; */
+  /* Bordes redondeados de la pista */
+}
