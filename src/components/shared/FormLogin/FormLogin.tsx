@@ -4,6 +4,7 @@ import styles from "./FormLogin.module.css";
 import Image from "next/image";
 import { login } from "@/actions";
 import { useAuthState } from "@/context/AuthStateContext";
+import { useOpenModalState } from "@/context/LoginModalContext";
 
 // Define el tipo de las credenciales para login
 interface Credentials {
@@ -12,6 +13,7 @@ interface Credentials {
 }
 
 export const FormLogin: React.FC = (): JSX.Element => {
+  const { isOpenModal, setIsOpenModal } = useOpenModalState();
   const { setAuthUser } = useAuthState();
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [email, setEmail] = useState<string>("");
@@ -40,6 +42,7 @@ export const FormLogin: React.FC = (): JSX.Element => {
         email: data.user.email,
       }),
     );
+    setIsOpenModal(!isOpenModal);
     localStorage.setItem("ACESS_TOKEN", JSON.stringify(data.access_token));
   };
 
